@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_stmt_num_rows($checkQuery) > 0) {
             echo json_encode([
                 'success' => false,
-                'message' => 'Record already exists for today'
+                'message' => 'Attendance cannot be done twice in a day!!'
             ]);
         } else {
             $insert_query = mysqli_prepare($connection, "INSERT INTO attendance (User_id,date,time,status) VALUES (?,?,?,?)");
