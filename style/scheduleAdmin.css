@@ -1,0 +1,36 @@
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.schedule-div {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+label {
+  font: 450 1.2vmax "system-ui";
+  margin-left: 15px;
+}
+textarea {
+  width: 70vw;
+  height: 60vh;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+}
+input[type="submit"] {
+  border-radius: 5px;
+  width: 6vw;
+  height: 5dvh;
+  padding: 5px 10px;
+  font: 500 1.1vmax "system-ui";
+  color: white;
+  background-color: rgba(26, 68, 255, 0.89);
+  margin-left: 15px;
+}

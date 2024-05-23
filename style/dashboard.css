@@ -1,0 +1,116 @@
+html,
+body {
+  max-width: 100dvw;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.active {
+  display: block;
+}
+.passive {
+  display: none;
+}
+.dashboard-section {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+.hero {
+  background-color: rgba(25, 25, 112, 0.276);
+  max-width: 81vw;
+  height: 44vh;
+  z-index: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.hero > div:first-child {
+  max-width: fit-content;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero p {
+  color: white;
+  font: 400 3vmax "system-ui";
+}
+.user-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 1vh 0.5vw;
+}
+.attendance,
+.schedule {
+  border: 1px solid rgba(128, 128, 128, 0.297);
+  border-radius: 5px;
+  background-color: aliceblue;
+  padding: 1.5vh 1.5vw;
+  max-height: 35dvh;
+}
+.attendance .date-time {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(121, 121, 121, 0.33);
+  min-height: 70%;
+}
+.attendance button {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: fit-content;
+  font: 500 1.2vmax "system-ui";
+  color: black;
+  background: radial-gradient(rgb(202, 202, 202), crimson);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.attendance button:hover {
+  scale: 1.02;
+}
+.date-time h4 {
+  font: 500 2vmax "system-ui";
+}
+.date-time h3 {
+  font: 500 2.5vmax "system-ui";
+}
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.schedule h5 {
+  text-align: center;
+  font: 500 1.5vmax "system-ui";
+  border-bottom: 2px dashed black;
+  padding: 2vh 2vw;
+}
+.schedule > div {
+  position: relative;
+  max-height: 55%;
+  height: 55rem;
+  padding: 1vh 2vw;
+  font: 400 1vmax "system-ui";
+  overflow-y: auto;
+}

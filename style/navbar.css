@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.disableCaret {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+nav > div:first-child {
+  height: 11vh;
+  width: auto;
+  background: linear-gradient(180deg, crimson, red, white);
+  display: grid;
+  grid-template-columns: 10fr 0.8fr;
+  gap: 10px;
+  padding: 1vh 2vw;
+}
+nav p {
+  text-align: center;
+  cursor: pointer;
+  padding: 2vh 2vw;
+  font: 600 2vmax "system-ui";
+  color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+.logout {
+  font: 500 1.1vmax "system-ui";
+  margin: 3vh 0;
+  color: white;
+  cursor: pointer;
+}
+i {
+  font-size: 1.7vmax;
+}

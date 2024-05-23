@@ -1,0 +1,62 @@
+html,
+body {
+  max-width: 100dvw;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.container {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+.leaveManagement {
+  padding: 2vh 1vw;
+}
+.leaveForm {
+  padding: 2vh 1vw;
+}
+.leaveForm label {
+  padding: 1vh 1vw;
+  font: 400 1.2vmax "system-ui";
+}
+.leaveForm input[name="subject"] {
+  width: clamp(18dvw, 65dvw, 81dvw);
+  font: 300 1.1vmax "system-ui";
+  height: fit-content;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: 2px solid rgba(138, 138, 138, 0.519);
+  border-radius: 5px;
+}
+.leaveForm textarea {
+  width: clamp(18dvw, 70dvw, 81dvw);
+  font: 300 1.1vmax "system-ui";
+  height: 45vh;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: 2px solid rgba(138, 138, 138, 0.519);
+  border-radius: 5px;
+}
+.leaveForm input[type="submit"] {
+  width: 10vw;
+  height: 6vh;
+  background-color: aqua;
+  border: 2px solid rgba(1, 189, 189, 0.656);
+  border-radius: 5px;
+  margin: 2vh 1vw;
+  cursor: pointer;
+}

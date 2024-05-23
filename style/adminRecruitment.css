@@ -1,0 +1,69 @@
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.recruit-div {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+#recruitment-body {
+  border-radius: 10px;
+  padding: 2vh 2vw;
+  max-width: 40dvw;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-41%, -60%);
+}
+input {
+  height: 2dvh;
+  margin: 0.5vh 0.5vw;
+  padding: 1vh 1vw;
+  width: 15dvw;
+  font: 350 1vmax "system-ui";
+  border-radius: 10px;
+  border-color: rgba(146, 146, 146, 0.466);
+}
+label {
+  margin: 1vh 0.5vw;
+  font: 500 1vmax "system-ui";
+}
+input[name="validity"],
+input[name="position"] {
+  margin-left: 4.2dvw;
+}
+input[type="submit"] {
+  width: 6vw;
+  height: 5dvh;
+  padding: 5px 10px;
+  font: 500 1.1vmax "system-ui";
+  color: white;
+  background-color: rgba(26, 68, 255, 0.89);
+}
+.recruit-board {
+  height: 55dvh;
+  overflow-y: auto;
+}
+.box {
+  background-color: lightgoldenrodyellow;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.1fr;
+  font: 350 1.2vmax "system-ui";
+  border-radius: 5px;
+}
+.removeRecruit {
+  cursor: pointer;
+}

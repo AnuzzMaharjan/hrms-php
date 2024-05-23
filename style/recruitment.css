@@ -1,0 +1,29 @@
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.recruitment-div {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+.recruitment-div {
+  height: 55dvh;
+  overflow-y: auto;
+}
+.box {
+  background-color: lightgoldenrodyellow;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.1fr;
+  font: 350 1.2vmax "system-ui";
+  border-radius: 5px;
+}

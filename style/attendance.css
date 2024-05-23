@@ -1,0 +1,41 @@
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.container {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+.attendance-table {
+  width: clamp(19dvw, 80dvw, 82dvw);
+  text-align: center;
+}
+.attendance-table,
+th,
+tr,
+td {
+  border: none;
+}
+.attendance-table th {
+  border-bottom: 2px solid rgba(79, 79, 79, 0.438);
+  border-width: 2px;
+}
+.attendance-table td:not(td:last-child) {
+  border-right: 1px solid rgba(74, 73, 73, 0.233);
+}
+.attendance-table th {
+  padding: 0.5vh 1vw;
+  font: 500 1.3vmax "system-ui";
+}
+.attendance-table td {
+  padding: 0.5vh 1vw;
+  font: 400 1vmax "system-ui";
+}

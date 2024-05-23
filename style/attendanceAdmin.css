@@ -1,0 +1,48 @@
+:not(input) {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+.admin-attendance {
+  margin-left: 15dvw;
+  margin-top: 13.5vh;
+  min-width: 20dvw;
+  max-width: 82dvw;
+  min-height: 85dvh;
+  padding: 0 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.297);
+  overflow: hidden;
+}
+.searchBar {
+  width: clamp(18dvw, 60dvw, 65dvw);
+  margin-left: 10vw;
+}
+.searchBar input[type="number"] {
+  width: clamp(15dvw, 50dvw, 55dvw);
+  height: clamp(2dvh, 5dvh, 7dvh);
+  border-radius: 5px;
+  border-color: rgba(159, 158, 158, 0.619);
+  padding: 0.5vh 0.5vw;
+}
+.searchBar input[type="submit"] {
+  width: clamp(3dvw, 8dvw, 9dvw);
+  height: clamp(2dvh, 6dvh, 7dvh);
+  border-radius: 5px;
+  border-color: rgba(159, 158, 158, 0.619);
+  background-color: rgba(51, 51, 253, 0.742);
+  color: white;
+}
+input[type="number"]::placeholder {
+  font-size: 15px;
+  opacity: 0.7;
+}
+hr {
+  margin: 3vh 0;
+  height: 2px;
+  background-color: rgba(224, 0, 0, 0.199);
+  border-radius: 10px;
+}
+.deleteRecord {
+  cursor: pointer;
+}
